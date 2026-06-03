@@ -1,0 +1,49 @@
+body {
+  background-color: darkcyan;
+}
+
+.toprow {
+  text-align: center;
+  width: 350px;
+  margin: 0px auto 50px;
+  border: solid 3px goldenrod;
+  border-radius: 10px;
+  background-color: goldenrod;
+  padding: 5px;
+  font-family: helvetica;
+}
+
+name {
+  font-weight: bold;
+  font-size: 20px;
+ }
+
+input, button {
+  margin: 5px 0px 20px;
+}
+
+button {
+  background-color: blue;
+  border-radius: 10px;
+  border: solid black 1px;
+  color: white;
+  padding: 1px;
+  width: 50px
+}
+
+button:hover {
+  border: solid black 1px;
+  color: black;
+  background-color: white;
+}
+
+p {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: helvetica;
+}
+
+mark {
+  background-color: goldenrod;
+  border-radius: 6px;
+}
