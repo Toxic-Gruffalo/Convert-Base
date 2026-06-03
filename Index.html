@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Converter</title>
+  </head>
+  
+  <body>
+    <div class='toprow'>
+      <h1>Convert a number into any base!</h1>
+    </div>
+    <div class='midrow'>
+      <name class='name'>Enter your number in the field below.</name>
+      <br>
+      <input type='number', name = 'input', id = 'input'>
+      <br>
+      <name class='name'>Enter the base you would like to convert to.</name>
+      <br>
+      <input type='number', name='base', id='base'>
+      <br>
+      <button name = 'submit', onclick = 'displayNumber()'>Submit</button>
+    </div>
+    <name class='display'>Result:</name>
+    <br>
+    <p class='display'><mark id='display'></mark></p>
+  </body>
+</html>
