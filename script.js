@@ -9,7 +9,7 @@ function checkIsPower(number, power) {
     }
     i = i*power;
   }
-  return isTrue;
+  return isTrue; 
 }
 
 function findFactor(number, power) {
@@ -50,12 +50,18 @@ function createDigits(number, base) {
 
 function createString(number, base) {
   var string = '';
-  var digits = createDigits(number, base);
-  var i = 0
-  for (var i = 0; i < digits.length; i++) {
-    string = `${string}${digits[i]}`;
+  if (base === 0 || base === 1) {
+    return 'Please choose a base of 2 or greater.';
+  } else if (base > 10) {
+    return 'Please choose a base of 10 or under.';
+  } else {
+    var digits = createDigits(number, base);
+    var i = 0
+    for (var i = 0; i < digits.length; i++) {
+      string = `${string}${digits[i]}`;
+    }
+    return string;
   }
-  return string;
 }
 
 function displayNumber() { 
